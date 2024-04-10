@@ -19,7 +19,7 @@ const Posters = () => {
 return (
     <div className="index-class">
            {/* Logo container */}
-           <div className="flex justify-center my-4">
+           <div className="flex justify-center my-2">
         <img src="/pics/banners/logo.jpg" alt="Logo" className="" /> {/* Adjust width as needed */}
       </div>
       {/* Slider container */}
