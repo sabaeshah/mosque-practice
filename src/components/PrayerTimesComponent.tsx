@@ -82,7 +82,7 @@ const PrayerTimesComponent = () => {
   return (
     <Container fluid className="">
       <div
-        className="text-black text-center font-bold sm:text-4xl md:text-5xl lg:text-7xll p-2"
+        className="text-black text-center font-bold sm:text-3xl md:text-4xl lg:text-5xll p-2"
         style={{ backgroundColor: "#f6dab6" }}
       >
         {date.hijri} {date.month} {date.year}
@@ -91,7 +91,8 @@ const PrayerTimesComponent = () => {
         className="text-center sm:text-2xl md:text-3xl lg:text-5xl font-bold mb-4 pt-4"
         style={{ color: "#f6dab6" }}
       >
-        Prayer Times for Islamic Centre of Southwest Ontario
+        Prayer Times
+        {/* for Islamic Centre of Southwest Ontario */}
       </h1>
 
       <div className="overflow-x-auto">
@@ -102,7 +103,7 @@ const PrayerTimesComponent = () => {
               (prayer, index) => (
                 <tr
                   key={index}
-                  className="text-center font-bold sm:text-4xl md:text-5xl lg:text-7xl text-[#f6dab6] border border-[#f6dab6]"
+                  className="text-center font-bold sm:text-4xl md:text-4xl lg:text-5xl text-[#f6dab6] border border-[#f6dab6]"
                 >
                   <td className="sm:p-3 md:p-4 border border-[#f6dab6]">
                     {prayer}
@@ -121,7 +122,7 @@ const PrayerTimesComponent = () => {
         </table>
       </div>
 
-      <div className="bg-red-500 text-white text-center p-8 flex items-center justify-center">
+      <div className="bg-red-500 text-white text-center p-2 flex items-center justify-center">
         <MdOutlineMobileOff className="text-8xl mr-2" />
         <p className="p-4 sm:text-4xl md:text-5xl lg:text-5xl font-bold">
           Please Switch OFF your Mobile Phones

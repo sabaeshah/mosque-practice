@@ -36,21 +36,21 @@ const WeatherDisplay = () => {
     const getWeatherIcon = (maxTemp: number) => {
         // Example condition: adjust according to your needs
         if (maxTemp < 0) {
-            return <WiCloudy className="text-3xl" />;
+            return <WiCloudy className="text-2xl" />;
         } else if (maxTemp < 20) {
-            return <WiRain className="text-3xl" />;
+            return <WiRain className="text-2xl" />;
         } else {
-            return <WiDaySunny className="text-3xl" />;
+            return <WiDaySunny className="text-2xl" />;
         }
     };
 
     return (
         <div className=" p-4 rounded-lg text-white">
-            <h2 className="sm:text-2xl md:text-3xl lg:text-5xl font-bold mb-4">Weather in London, Ontario</h2>
-            <p className="sm:text-4xl md:text-6xl lg:text-9xl">{currentWeather.temperature}</p>
-            <div className="grid grid-cols-3 gap-4 font-bold sm:text-2xl md:text-3xl lg:text-4xl">
+            <h2 className="sm:text-xl md:text-2xl lg:text-3xl font-bold mb-4">Weather in London, Ontario</h2>
+            <p className="sm:text-2xl md:text-3xl lg:text-5xl">{currentWeather.temperature}</p>
+            <div className="grid grid-cols-3 gap-4 font-bold sm:text-xl md:text-2xl lg:text-3xl">
                 {forecast.map(({ day, maxTemp, minTemp }) => (
-                    <div key={day} className="text-center sm:text-xl md:text-2xl lg:text-3xl">
+                    <div key={day} className="text-center sm:text-lg md:text-xl lg:text-2xl">
                         {getWeatherIcon(maxTemp)}
                         <p>{day}</p>
                         <p>{`Max: ${maxTemp}°C`}</p>

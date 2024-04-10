@@ -24,19 +24,19 @@ const ConnectWithUs = () => {
         <div  className="text-white index-class">
             <h2 className="text-left text-5xl font-bold mb-4 text-white p-2">Connect With Us</h2>
             {/* Slider container */}
-            <div className="my-5"></div> 
+            <div className="my-2"></div> 
             <Slider {...settings}>
                 <div>
-                    <img src="/pics/qrcodes/fb.png" alt="Facebook" className="w-full p-3" />
+                    <img src="/pics/qrcodes/fb.png" alt="Facebook" className="" />
                 </div>
                 <div>
-                    <img src="/pics/qrcodes/1.png" alt="Instagram" className="w-full p-3" />
+                    <img src="/pics/qrcodes/1.png" alt="Instagram" className=" " />
                 </div>
                 <div>
-                    <img src="/pics/qrcodes/email.png" alt="Mail" className="w-full p-3" />
+                    <img src="/pics/qrcodes/email.png" alt="Mail" className=" " />
                 </div>
                 <div>
-                    <img src="/pics/qrcodes/u-tube.png" alt="Youtube" className="w-full p-3" />
+                    <img src="/pics/qrcodes/u-tube.png" alt="Youtube" className="" />
                 </div>
             </Slider>
         </div>
