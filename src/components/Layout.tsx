@@ -5,24 +5,23 @@ import PrayerTimesComponent from './PrayerTimesComponent';
 import WeatherDisplay from './WeatherDisplay';
 import ConnectWithUs from './ConnectWithUs';
 import Posters from './Posters';
-
 const Layout = () => {
   return (
     <Container fluid className="min-vh-100 bg-cover bg-center p-4" style={{ backgroundImage: `url('/pics/banners/background.jpg')` }}>
       <Row>
         {/* Date and prayer times */}
-        <Col xs={12} md={6} lg={4} className="flex flex-col justify-between mb-4 lg:mb-0">
+        <Col md={4} className="">
           <DateDisplay />
           <PrayerTimesComponent />
         </Col>
         
         {/* Poster in the middle column */}
-        <Col xs={12} md={6} lg={4} className="flex flex-col items-center justify-center mb-4 lg:mb-0">
+        <Col md={4} className="">
           <Posters />
         </Col>
         
         {/* Weather and connect sections */}
-        <Col xs={12} lg={4} className="flex flex-col justify-between">
+        <Col md={4} className="">
           <WeatherDisplay />
           <ConnectWithUs />
         </Col>

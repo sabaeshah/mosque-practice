@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../index.css';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const ConnectWithUs = () => {
     // Slider settings
@@ -17,8 +18,10 @@ const ConnectWithUs = () => {
     };
 
     return (
-        <div className="text-white p-4 index-class">
-            <div className="my-16"></div> 
+        <Container fluid className="text-white p-4 index-class">
+        <Row>
+            <Col md={12}>
+        <div  className="text-white index-class">
             <h2 className="text-left text-5xl font-bold mb-4 text-white p-2">Connect With Us</h2>
             {/* Slider container */}
             <div className="my-5"></div> 
@@ -37,6 +40,9 @@ const ConnectWithUs = () => {
                 </div>
             </Slider>
         </div>
+        </Col>
+        </Row>
+        </Container>
     );
 };
 

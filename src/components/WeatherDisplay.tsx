@@ -46,13 +46,13 @@ const WeatherDisplay = () => {
 
     return (
         <div className=" p-4 rounded-lg text-white">
-            <h2 className="text-4xl font-bold mb-4">Weather in London, Ontario</h2>
-            <p className="text-8xl">{currentWeather.temperature}</p>
-            <div className="grid grid-cols-3 gap-4 font-bold text-xl">
+            <h2 className="sm:text-2xl md:text-3xl lg:text-5xl font-bold mb-4">Weather in London, Ontario</h2>
+            <p className="sm:text-4xl md:text-6xl lg:text-9xl">{currentWeather.temperature}</p>
+            <div className="grid grid-cols-3 gap-4 font-bold sm:text-2xl md:text-3xl lg:text-4xl">
                 {forecast.map(({ day, maxTemp, minTemp }) => (
-                    <div key={day} className="text-center">
+                    <div key={day} className="text-center sm:text-xl md:text-2xl lg:text-3xl">
                         {getWeatherIcon(maxTemp)}
-                        <p className="text-lg">{day}</p>
+                        <p>{day}</p>
                         <p>{`Max: ${maxTemp}°C`}</p>
                         <p>{`Min: ${minTemp}°C`}</p>
                     </div>
