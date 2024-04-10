@@ -28,7 +28,7 @@ const PrayerTimesComponent = () => {
     const month = moment().month() + 1; // JavaScript months are 0-11
 
     fetch(
-      `http://api.aladhan.com/v1/calendarByCity/${year}/${month}?city=London&country=Canada&method=2`
+      `https://api.aladhan.com/v1/calendarByCity/${year}/${month}?city=London&country=Canada&method=2`
     )
       .then((response) => response.json())
       .then((data) => {
