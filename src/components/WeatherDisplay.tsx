@@ -45,7 +45,7 @@ const WeatherDisplay = () => {
     };
 
     return (
-        <div className=" p-4 rounded-lg text-white">
+        <div className="p-4 rounded-lg text-white">
             <h2 className="sm:text-xl md:text-2xl lg:text-3xl font-bold mb-4">Weather in London, Ontario</h2>
             <p className="sm:text-2xl md:text-3xl lg:text-5xl">{currentWeather.temperature}</p>
             <div className="grid grid-cols-3 gap-4 font-bold sm:text-xl md:text-2xl lg:text-3xl">

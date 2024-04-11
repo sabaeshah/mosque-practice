@@ -36,3 +36,80 @@
     transform: rotate(360deg);
   }
 }
+/* Styles for devices with a width less than 600px */
+@media (max-width: 599px) {
+  .container {
+    padding: 1rem;
+  }
+}
+
+/* Styles for devices with a width between 600px and 899px */
+@media (min-width: 600px) and (max-width: 899px) {
+  .container {
+    padding: 2rem;
+  }
+}
+
+/* Styles for devices with a width of 900px and above */
+@media (min-width: 900px) {
+  .container {
+    padding: 3rem;
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item {
+  flex: 1 1 200px;
+  /* Grow to fill available space, but start at 200px */
+}
+.clockcss .text8xl {
+  font-size: 2rem;
+  color: bisque;
+  /* Default font size for small screens */
+  padding: 0.5rem;
+}
+
+.clockcss .text4xl {
+  font-size: 1rem;
+  color: bisque;
+  /* Default font size for small screens */
+  padding: 1rem;
+}
+
+/* Medium screens */
+@media (min-width: 600px) {
+  .clockcss .text8xl {
+    font-size: 3rem;
+    color: bisque;
+    /* Larger font size for medium screens */
+  }
+
+  .clockcss .text4xl {
+    font-size: 1.5rem;
+    color: bisque;
+    /* Larger font size for medium screens */
+  }
+}
+
+/* Large screens */
+@media (min-width: 900px) {
+  .clockcss .text8xl {
+    font-size: 5rem;
+    color: bisque;
+    /* Even larger font size for large screens */
+    padding: 1rem;
+    /* Adjust padding for better spacing */
+  }
+
+  .clockcss .text4xl {
+    font-size: 2.5rem;
+    color: bisque;
+    /* Larger font size for large screens */
+    padding: 2rem;
+    /* Adjust padding for better spacing */
+  }
+}

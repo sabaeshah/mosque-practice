@@ -38,9 +38,9 @@ const DateDisplay = () => {
 
   // Display the date and time along with the location and AM/PM indication
   return (
-    <div className="bg-Zinc-400 font-semibold text-[#f6dab6]">
-      <div className="text-center text-8xl p-2">{timeString}</div>
-      <div className="text-center text-4xl p-4">{dateString} </div> 
+<div className="clockcss">
+  <div className="text8xl">{timeString}</div>
+  <div className="text4xl">{dateString}</div>
       {/* <div className="text-center text-4xl p-2 bg-green-800">{hijriDate}</div> */}
       
     </div>

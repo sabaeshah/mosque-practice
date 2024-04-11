@@ -7,7 +7,8 @@ import ConnectWithUs from './ConnectWithUs';
 import Posters from './Posters';
 const Layout = () => {
   return (
-    <Container fluid className="min-vh-100 bg-cover bg-center p-4" style={{ backgroundImage: `url('/pics/banners/background.jpg')` }}>
+<Container fluid className="min-vh-100 bg-cover bg-center p-4" style={{ backgroundImage: `url('/pics/banners/background.jpg')`, maxWidth: '100vw' }}>
+
       <Row>
         {/* Date and prayer times */}
         <Col md={4} className="">

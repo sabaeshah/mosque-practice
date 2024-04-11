@@ -30,7 +30,7 @@ const ConnectWithUs = () => {
                     <img src="/pics/qrcodes/fb.png" alt="Facebook" className="" />
                 </div>
                 <div>
-                    <img src="/pics/qrcodes/1.png" alt="Instagram" className=" " />
+                    <img src="/pics/qrcodes/1.png" alt="Instagram" className="" />
                 </div>
                 <div>
                     <img src="/pics/qrcodes/email.png" alt="Mail" className=" " />
